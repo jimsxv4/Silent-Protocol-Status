@@ -1,0 +1,162 @@
+/* styles.css */
+
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, rgb(3, 1, 24), rgb(26, 35, 71), rgb(58, 53, 102));
+  background-attachment: fixed; /* Pour que le dégradé reste fixe */
+  background-repeat: no-repeat;
+  background-size: cover; /* Couvre tout l’écran */
+  color: white;
+  text-align: center;
+}
+
+
+header {
+  padding: 40px 20px 10px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-logo {
+  width: 140px;
+  height: auto;
+}
+
+.subtitle {
+  color: #ccc;
+  margin-top: 5px;
+}
+
+/* ... le reste de ton CSS reste identique ... */
+
+
+h2 {
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+}
+
+.card {
+  background: rgba(0,0,0,0.6);
+  border-radius: 12px;
+  padding: 20px;
+  width: 310px;
+  box-shadow: 0 4px 10px rgba(97, 98, 110, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+.status {
+  font-size: 0.9rem;
+  text-align: right;
+  color: #ddd;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.on {
+  background: #0f0; /* Vert */
+}
+
+.off {
+  background: #f00; /* Rouge */
+}
+
+.upd {
+  background: #ffa500; /* Orange */
+}
+
+
+.icon {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.shield::before {
+  content: "🛡️";
+}
+
+.laptop::before {
+  content: "💻";
+}
+
+.wrench::before {
+  content: "🔧";
+}
+
+h3 {
+  margin: 10px 0 5px;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #bbb;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #444c59;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background: #5a6270;
+  transform: scale(1.05);
+}
+
+.discord-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.discord-btn:hover {
+  background: #222;
+  transform: scale(1.05);
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.8rem;
+  color: #777;
+}
